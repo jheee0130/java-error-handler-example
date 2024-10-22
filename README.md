@@ -5,10 +5,10 @@
 
 # 게시글 작성
 ## Request
-```http request
+```http
 curl --location --request POST 'localhost:8080/post' \
 --header 'Content-Type: application/json' \
-``
+```
 ```json
 {
     "id":1,
@@ -36,7 +36,7 @@ curl --location --request POST 'localhost:8080/post' \
 
 # 게시글 조회
 ## Request
-```http request
+```http
 curl --location --request GET 'localhost:8080/post' \
 --header 'Content-Type: application/json'
 ```
@@ -69,7 +69,7 @@ curl --location --request GET 'localhost:8080/post' \
 
 # 게시글 리스트 조회
 ## Request
-```http request
+```http
 curl --location 'localhost:8080/post/list'
 ```
 
