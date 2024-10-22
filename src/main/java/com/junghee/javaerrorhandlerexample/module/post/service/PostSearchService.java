@@ -18,7 +18,7 @@ public class PostSearchService {
     public PostInfoResponse getPost(PostRequest request) {
         return postRepository.findById(request.id())
             .map(PostInfoResponse::toResponse)
-            .orElseThrow(() -> new BusinessException(ErrorCode.USER_NOT_FOUND));
+            .orElseThrow(() -> new BusinessException(ErrorCode.POST_NOT_FOUND));
     }
 
     public PostResponse getPostList() {
